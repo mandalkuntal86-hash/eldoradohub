@@ -68,6 +68,31 @@
     margin: 0 auto;
   }
 
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(2, 1fr); padding: 16px 20px 32px; gap: 16px; }
+    .hero { padding: 32px 20px 12px; }
+    .hero h1 { font-size: 22px; }
+    .topbar { padding: 0 20px; }
+  }
+
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: 1fr; padding: 12px 14px 28px; gap: 14px; }
+    .hero { padding: 24px 14px 10px; }
+    .hero h1 { font-size: 20px; }
+    .hero p { font-size: 13px; }
+    .topbar { padding: 0 14px; height: 54px; }
+    .logo-name { font-size: 15px; }
+    .topbar-sub { font-size: 11px; }
+    .preview-box { height: 200px; }
+    .card-header { padding: 14px 14px 12px; gap: 10px; }
+    .app-icon { width: 36px; height: 36px; font-size: 18px; }
+    .card-title { font-size: 13px; }
+    .overlay-bar { padding: 0 14px; gap: 10px; }
+    .back-btn { padding: 5px 12px; font-size: 11px; }
+    .overlay-title { font-size: 13px; }
+    .overlay-url { display: none; }
+  }
+
   .card {
     background: var(--white);
     border-radius: 20px;
