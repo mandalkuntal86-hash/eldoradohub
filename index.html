@@ -83,7 +83,6 @@
     .topbar { padding: 0 14px; height: 54px; }
     .logo-name { font-size: 15px; }
     .topbar-sub { font-size: 11px; }
-    .preview-box { height: 200px; }
     .card-header { padding: 14px 14px 12px; gap: 10px; }
     .app-icon { width: 36px; height: 36px; font-size: 18px; }
     .card-title { font-size: 13px; }
@@ -150,30 +149,7 @@
   .card:nth-child(2) .open-btn { background: var(--c2); color: #fff; }
   .card:nth-child(3) .open-btn { background: var(--c3); color: #fff; }
 
-  /* Preview iframe area */
-  .preview-box {
-    position: relative;
-    height: 320px;
-    overflow: hidden;
-    background: #f9fafc;
-  }
-  .preview-box iframe {
-    width: 200%;
-    height: 200%;
-    transform: scale(.5);
-    transform-origin: top left;
-    border: none;
-    pointer-events: none;
-  }
-  /* Fade overlay so cut-off doesn't look harsh */
-  .preview-box::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 80px;
-    background: linear-gradient(to bottom, rgba(249,250,252,0) 0%, rgba(249,250,252,1) 100%);
-    pointer-events: none;
-  }
+
 
   /* ── FULLSCREEN OVERLAY ── */
   .overlay {
@@ -246,9 +222,6 @@
       </div>
       <button class="open-btn" onclick="event.stopPropagation(); openApp(0)">Open</button>
     </div>
-    <div class="preview-box">
-      <iframe src="https://mandalkuntal86-hash.github.io/purchase-tracker/" sandbox="allow-scripts allow-same-origin" tabindex="-1" aria-hidden="true"></iframe>
-    </div>
   </div>
 
   <div class="card" onclick="openApp(1)">
@@ -260,9 +233,6 @@
       </div>
       <button class="open-btn" onclick="event.stopPropagation(); openApp(1)">Open</button>
     </div>
-    <div class="preview-box">
-      <iframe src="https://mandalkuntal86-hash.github.io/eldoradodue/" sandbox="allow-scripts allow-same-origin" tabindex="-1" aria-hidden="true"></iframe>
-    </div>
   </div>
 
   <div class="card" onclick="openApp(2)">
@@ -273,9 +243,6 @@
         <div class="card-desc">Browse Apple product prices</div>
       </div>
       <button class="open-btn" onclick="event.stopPropagation(); openApp(2)">Open</button>
-    </div>
-    <div class="preview-box">
-      <iframe src="https://mandalkuntal86-hash.github.io/apple-price-list/apple_price_list.html" sandbox="allow-scripts allow-same-origin" tabindex="-1" aria-hidden="true"></iframe>
     </div>
   </div>
 
