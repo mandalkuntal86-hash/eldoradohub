@@ -113,6 +113,7 @@
   .card:nth-child(3):hover { box-shadow: 0 16px 48px rgba(240,90,90,.18); }
   .card:nth-child(4):hover { box-shadow: 0 16px 48px rgba(162,89,255,.18); }
   .card:nth-child(5):hover { box-shadow: 0 16px 48px rgba(0,180,219,.18); }
+  .card:nth-child(6):hover { box-shadow: 0 16px 48px rgba(255,149,0,.18); }
 
   /* Card header strip */
   .card-header {
@@ -134,6 +135,7 @@
   .card:nth-child(3) .app-icon { background: #f2f2f7; }
   .card:nth-child(4) .app-icon { background: #f3eeff; }
   .card:nth-child(5) .app-icon { background: #e0f7ff; }
+  .card:nth-child(6) .app-icon { background: #fff4e0; }
 
   .card-meta { flex: 1; min-width: 0; }
   .card-title { font-size: 14px; font-weight: 700; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -155,6 +157,7 @@
   .card:nth-child(3) .open-btn { background: var(--c3); color: #fff; }
   .card:nth-child(4) .open-btn { background: var(--c4); color: #fff; }
   .card:nth-child(5) .open-btn { background: #00b4db; color: #fff; }
+  .card:nth-child(6) .open-btn { background: #ff9500; color: #fff; }
 
   /* ── FULLSCREEN OVERLAY ── */
   .overlay {
@@ -277,6 +280,17 @@
     </div>
   </div>
 
+  <div class="card" onclick="openApp(4)">
+    <div class="card-header">
+      <div class="app-icon">💻</div>
+      <div class="card-meta">
+        <div class="card-title">LapTrade Pro</div>
+        <div class="card-desc">Laptop trading management</div>
+      </div>
+      <button class="open-btn" onclick="event.stopPropagation(); openApp(4)">Open</button>
+    </div>
+  </div>
+
 
 </div></div>
 <div class="overlay" id="overlay">
@@ -294,6 +308,7 @@
     { name: 'El Dorado Due',     url: 'https://mandalkuntal86-hash.github.io/eldoradodue/' },
     { name: 'Apple Price List',  url: 'https://mandalkuntal86-hash.github.io/apple-price-list/apple_price_list.html' },
     { name: 'Apple Due',         url: 'https://mandalkuntal86-hash.github.io/apple-due/due_maintain.html' },
+    { name: 'LapTrade Pro',      url: 'https://mandalkuntal86-hash.github.io/apple-trade/laptop_trading.html' },
   ];
 
   function openApp(i) {
