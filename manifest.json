@@ -1,0 +1,19 @@
+{
+  "name": "Eldorado",
+  "short_name": "Eldorado",
+  "description": "Your App Suite — all tools, one place",
+  "start_url": "/eldoradohub/index.html",
+  "scope": "/eldoradohub/",
+  "display": "standalone",
+  "background_color": "#f0f4ff",
+  "theme_color": "#0f1630",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='24' fill='%230f1630'/><text x='96' y='130' font-size='110' text-anchor='middle' fill='%232563eb' font-family='serif' font-weight='bold'>E</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
